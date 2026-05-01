@@ -9,8 +9,8 @@ let orbitSpinSpeed = 15;
 const increaseCentralSpin = () => {
 
     containerSpinButton.innerHTML = "Again!"
-    if (centralSpinSpeed > 1) {
-        centralSpinSpeed = centralSpinSpeed - 1
+    if (centralSpinSpeed > 2) {
+        centralSpinSpeed = centralSpinSpeed - 2
     } else if (centralSpinSpeed > 0.2) {
         containerSpinButton.innerHTML = "More!"
         centralSpinSpeed = centralSpinSpeed - 0.1
@@ -24,10 +24,10 @@ const increaseCentralSpin = () => {
 const increaseOrbitSpin = () => {
     
     orbitSpinButton.innerHTML = "Again!"
-    if (orbitSpinSpeed > 1) {
-        orbitSpinSpeed = orbitSpinSpeed - 1
+    if (orbitSpinSpeed > 2) {
+        orbitSpinSpeed = orbitSpinSpeed - 2
     } else if (orbitSpinSpeed > 0.2) {
-        containerSpinButton.innerHTML = "Again I said!"
+        orbitSpinButton.innerHTML = "Again I said!"
         orbitSpinSpeed = orbitSpinSpeed - 0.1
     } else {
         orbitSpinButton.innerHTML = "boiiii!!!"

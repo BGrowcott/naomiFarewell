@@ -14,8 +14,8 @@ main {
 }
 
 .orbit-item {
-    width: 225px;
-    height: 225px;
+    width: 200px;
+    height: 200px;
     animation: spinBack 15s linear infinite;
 }
 
@@ -23,10 +23,14 @@ main {
     position: relative;
 }
 
+.height-control {
+    min-height: 70vh
+}
+
 @media screen and (max-width: 1000px) {
     .center-image {
-        width: 200px;
-        height: 200px;
+        width: 175px;
+        height: 175px;
         top: 125px
     }
     
@@ -56,6 +60,10 @@ main {
     .orbit-item {
         width: 100px;
         height: 100px;
+    }
+
+    .height-control {
+        min-height: 50vh
     }
 }
 
