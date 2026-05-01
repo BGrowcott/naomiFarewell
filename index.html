@@ -12,6 +12,7 @@
 		/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 		<link rel="stylesheet" type="text/css" href="index.css" />
+		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 	</head>
 	<body style="background-color: #fba46d" class="px-1">
 		<main class="container p-2 p-lg-5 bg-light border border-black border-5 border-top-0 border-bottom-0">
@@ -21,9 +22,10 @@
 				<div>We are gonna miss ya!</div>
 			</div>
 
-			<button class="btn btn-outline-dark rounded-0" id="containerSpinButton">Click!</button>
-			<button class="btn btn-outline-dark rounded-0" id="orbitSpinButton">Click!</button>
-
+			<div class="position-relative" style="z-index: 20;">
+				<button class="btn btn-light shadow rounded-0" id="containerSpinButton">Click!</button>
+				<button class="btn btn-light shadow rounded-0" id="orbitSpinButton">Click!</button>
+			</div>
 			<div class="d-flex justify-content-center align-items-center height-control">
 				<div class="orbit-container mt-5 d-flex justify-content-center">
 					<img src="images/NaomiWinchurch.jpg" class="rounded-circle center-image position-absolute" />
@@ -60,7 +62,7 @@
 						</figure>
 					</div>
 				</div>
-                <div class="col-12 col-lg-6">
+				<div class="col-12 col-lg-6">
 					<div class="d-flex mt-5 align-items-center">
 						<div class="me-2">
 							<img src="images/BenGrowcott.jpg" class="rounded-circle" style="width: 70px" />
@@ -73,7 +75,7 @@
 						</figure>
 					</div>
 				</div>
-                <div class="col-12 col-lg-6">
+				<div class="col-12 col-lg-6">
 					<div class="d-flex mt-5 align-items-center">
 						<div class="me-2">
 							<img src="images/BenGrowcott.jpg" class="rounded-circle" style="width: 70px" />
@@ -86,7 +88,7 @@
 						</figure>
 					</div>
 				</div>
-                <div class="col-12 col-lg-6">
+				<div class="col-12 col-lg-6">
 					<div class="d-flex mt-5 align-items-center">
 						<div class="me-2">
 							<img src="images/BenGrowcott.jpg" class="rounded-circle" style="width: 70px" />
@@ -99,7 +101,7 @@
 						</figure>
 					</div>
 				</div>
-                <div class="col-12 col-lg-6">
+				<div class="col-12 col-lg-6">
 					<div class="d-flex mt-5 align-items-center">
 						<div class="me-2">
 							<img src="images/BenGrowcott.jpg" class="rounded-circle" style="width: 70px" />
@@ -112,7 +114,7 @@
 						</figure>
 					</div>
 				</div>
-                <div class="col-12 col-lg-6">
+				<div class="col-12 col-lg-6">
 					<div class="d-flex mt-5 align-items-center">
 						<div class="me-2">
 							<img src="images/BenGrowcott.jpg" class="rounded-circle" style="width: 70px" />
@@ -125,7 +127,7 @@
 						</figure>
 					</div>
 				</div>
-                <div class="col-12 col-lg-6">
+				<div class="col-12 col-lg-6">
 					<div class="d-flex mt-5 align-items-center">
 						<div class="me-2">
 							<img src="images/BenGrowcott.jpg" class="rounded-circle" style="width: 70px" />
@@ -138,7 +140,7 @@
 						</figure>
 					</div>
 				</div>
-                <div class="col-12 col-lg-6">
+				<div class="col-12 col-lg-6">
 					<div class="d-flex mt-5 align-items-center">
 						<div class="me-2">
 							<img src="images/BenGrowcott.jpg" class="rounded-circle" style="width: 70px" />
@@ -151,7 +153,6 @@
 						</figure>
 					</div>
 				</div>
-                
 			</div>
 		</main>
 
