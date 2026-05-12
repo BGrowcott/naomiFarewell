@@ -1,5 +1,7 @@
 main {
     min-height: 100vh;
+    background-image: url(images/bg.png);
+    background-size: contain;
 }
 .center-image {
     width: 300px;
@@ -181,3 +183,10 @@ main {
       transform: rotate(0deg);
     }
   }
+
+
+  .shadow-dance-text {
+    color: rgb(131, 21, 125);
+    text-shadow: 1px 1px 0 #000000, 2px 2px 1px rgb(44, 7, 42), 4px 4px 2px rgb(206, 71, 199), 6px 6px 8px rgb(255, 89, 247);
+}
+  
