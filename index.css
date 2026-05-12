@@ -79,6 +79,102 @@ main {
 
   @keyframes spinBack {
     from {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+
+
+  .pentagon {
+    --size: 400px;
+    --dot-size: 200px;
+    --radius: 300px;
+  
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    background-image: url(images/NaomiWinchurch.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 80px;
+  }
+  
+  /* full-size orbit layer centered on the pentagon */
+  .dot {
+    position: absolute;
+    inset: 0;
+    animation: orbit 15s linear infinite;
+  }
+  
+  /* visible circle positioned from the shared center */
+  .dot-inner {
+    position: absolute;
+    width: var(--dot-size);
+    height: var(--dot-size);
+    top: 50%;
+    left: 50%;
+    margin-left: calc(var(--dot-size) / -2);
+    margin-top: calc((var(--dot-size) / -2) - var(--radius));
+  
+    background: #198754;
+    border-radius: 50%;
+  
+  }
+
+  @media screen and (max-width: 992px) { 
+    .pentagon {
+        --size: 300px;
+        --dot-size: 175px;
+        --radius: 250px;
+      }
+  }
+
+  @media screen and (max-width: 768px) { 
+    .pentagon {
+        --size: 200px;
+        --dot-size: 120px;
+        --radius: 175px;
+      }
+  }
+
+  @media screen and (max-width: 500px) { 
+    .pentagon {
+        --size: 180px;
+        --dot-size: 100px;
+        --radius: 150px;
+      }
+  }
+
+  @media screen and (max-width: 400px) { 
+    .pentagon {
+        --size: 160px;
+        --dot-size: 90px;
+        --radius: 125px;
+      }
+  }
+  
+  /* starting angles */
+  .dot:nth-child(1) { --start: 0deg; }
+  .dot:nth-child(2) { --start: 60deg; }
+  .dot:nth-child(3) { --start: 120deg; }
+  .dot:nth-child(4) { --start: 180deg; }
+  .dot:nth-child(5) { --start: 240deg; }
+  .dot:nth-child(6) { --start: 300deg; }
+  
+  @keyframes orbit {
+    from {
+      transform: rotate(var(--start));
+    }
+    to {
+      transform: rotate(calc(var(--start) + 360deg));
+    }
+  }
+  
+  @keyframes spinBack {
+    from {
       transform: rotate(360deg);
     }
     to {

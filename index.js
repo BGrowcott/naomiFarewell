@@ -1,20 +1,24 @@
 const orbitContainer = document.querySelector('.orbit-item-container');
-const centerImage = document.querySelector('.center-image');
+const centerImage = document.querySelector('.pentagon');
 const containerSpinButton = document.querySelector('#containerSpinButton');
-const orbitSpinButton = document.querySelector('#orbitSpinButton');
-const orbitItems = document.querySelectorAll('.orbit-item');
+//const orbitSpinButton = document.querySelector('#orbitSpinButton');
+//const orbitItems = document.querySelectorAll('.orbit-item');
+const orbitItems = document.querySelectorAll('.dot');
+
+
 
 let centralSpinSpeed = 15;
 let orbitSpinSpeed = 15;
 
 let centralClicks = 0;
 let orbitClicks = 0;
+let startSize = 400;
 
 const increaseCentralSpin = () => {
     centralClicks++;
-
-    centerImage.style.width = `${centerImage.width + centralClicks}px`
-    centerImage.style.height = `${centerImage.width + centralClicks}px`
+    startSize += centralClicks;
+    centerImage.style.width = `${startSize}px`
+    centerImage.style.height = `${startSize}px`
 
     if (centralClicks % 10 === 0) {
         fireConfetti();
@@ -28,10 +32,14 @@ const increaseCentralSpin = () => {
         centralSpinSpeed = centralSpinSpeed - 0.1
     } else {
         fireConfetti();
-        containerSpinButton.innerHTML = "Yeea!"
+        containerSpinButton.innerHTML = "Yeea boiii!!"
     }  
 
-    orbitContainer.style.animationDuration = `${centralSpinSpeed}s`;    
+    orbitItems.forEach(item => {
+        item.style.animationDuration = `${centralSpinSpeed}s`;
+    });    
+
+    //orbitContainer.style.animationDuration = `${centralSpinSpeed}s`;    
 };
 
 const increaseOrbitSpin = () => {
@@ -58,7 +66,7 @@ const increaseOrbitSpin = () => {
 };
 
 containerSpinButton.addEventListener("click", increaseCentralSpin)
-orbitSpinButton.addEventListener("click", increaseOrbitSpin)
+//orbitSpinButton.addEventListener("click", increaseOrbitSpin)
 
 const fireConfetti = () => {
     const duration = 1200;
