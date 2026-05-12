@@ -16,9 +16,9 @@ let startSize = 400;
 
 const increaseCentralSpin = () => {
     centralClicks++;
-    startSize += centralClicks;
-    centerImage.style.width = `${startSize}px`
-    centerImage.style.height = `${startSize}px`
+    // startSize += centralClicks;
+    // centerImage.style.width = `${startSize}px`
+    // centerImage.style.height = `${startSize}px`
 
     if (centralClicks % 10 === 0) {
         fireConfetti();
