@@ -175,7 +175,10 @@ const increaseCentralSpin = () => {
 	}
 
 	containerSpinButton.innerHTML = "Again!";
-	if (centralSpinSpeed > 2) {
+    if (centralSpinSpeed > 5) {
+		centralSpinSpeed = centralSpinSpeed - 4;
+    } else if (centralSpinSpeed > 2) {
+        containerSpinButton.innerHTML = "Faster!";
 		centralSpinSpeed = centralSpinSpeed - 2;
 	} else if (centralSpinSpeed > 0.2) {
 		containerSpinButton.innerHTML = "More!";
