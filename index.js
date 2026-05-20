@@ -87,6 +87,11 @@ const messages = [
 		message: "Good luck in your new role. We will miss you!",
 	},
     {
+		person: "Fran",
+		letter: "F",
+		message: "Congratulations in your new role Naomi! Severn Trent are incredibly lucky to have someone as lovely as you. Please make sure you pop by and see us, especially at the Christmas party ;-) All the best - we'll miss you!",
+	},
+    {
 		person: "Andy G",
 		letter: "A",
 		message: "All the best for the future Naomi, happy to see you got out before being fully corrupted by the developers!",

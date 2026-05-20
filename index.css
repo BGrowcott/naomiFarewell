@@ -28,7 +28,7 @@ main {
 }
 
 .height-control {
-    min-height: 70vh
+    min-height: 75vh
 }
 
 @media screen and (max-width: 1000px) {
